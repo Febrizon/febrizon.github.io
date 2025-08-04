@@ -1,0 +1,654 @@
+:root {
+  --primary-color: #252734; /* Biru */
+  --secondary-color: #333646; /* Hijau */
+  --accent-color: #ff9100; /* Merah */
+  --list-color: #30ba99; /* Merah */
+  --background-color: #ffffff; /* Abu-abu terang */
+}
+
+body {
+  background-color: var(--primary-color);
+  min-height: 900px;
+  font-family: "ubuntu", sans-serif;
+}
+
+section h1 {
+  color: white;
+  font-size: 2.5rem;
+}
+
+/* Navbar */
+.nav-link.active {
+  color: var(--accent-color) !important;
+  font-weight: 700;
+}
+
+.nav-dark {
+  background-color: var(--secondary-color) !important;
+  z-index: 10;
+  transition: 0.5s;
+}
+/* End navbar */
+
+/* Hero */
+.color-accent {
+  color: var(--accent-color);
+}
+.color-list {
+  color: var(--list-color);
+}
+
+#Hero {
+  color: #ffffff;
+  min-height: 100vh;
+  padding-top: 75px;
+}
+
+#Hero h1 {
+  font-size: 3rem;
+}
+
+#Hero h2 {
+  font-weight: 300;
+}
+
+#Hero p {
+  font-size: 1.1rem;
+  font-weight: 300;
+}
+#Hero img:hover {
+  transform: scale(1.3);
+}
+
+/* CTA */
+.btn-custom1 {
+  background-color: var(--list-color);
+  text-align: center;
+  color: #ffffff;
+  min-width: 150px;
+  height: 45px;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.btn-custom1:hover {
+  background-color: var(--accent-color);
+}
+
+.cv {
+  color: var(--list-color);
+  cursor: pointer;
+  font-size: 1.1rem;
+}
+
+.social-icon svg {
+  margin-right: 0.7em;
+  margin-bottom: 10px;
+}
+
+.social-icon-footer svg {
+  margin-right: 0.7em;
+  margin-bottom: 10px;
+}
+
+/* End Hero */
+
+/* About */
+hr {
+  width: 35%;
+  height: 5px;
+  color: var(--accent-color);
+  margin: 0 auto;
+  opacity: 100%;
+}
+
+#About {
+  min-height: 300px;
+  width: 100%;
+  background-color: var(--secondary-color);
+  color: #ffffff;
+  padding-top: 70px;
+  padding-bottom: 80px;
+  margin-bottom: 80px;
+}
+
+/* End About */
+
+/* Skill */
+#Skill {
+  width: 100%;
+  color: #ffffff;
+}
+
+#Skill img {
+  width: 70%;
+  margin: 10px;
+}
+
+#Skill h4 {
+  font-size: 1.5rem;
+}
+
+#Skill img:hover {
+  transform: scale(1.5);
+}
+
+#Skill .card {
+  background-color: var(--list-color);
+  height: 200px;
+  color: #ffffff;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#Skill .card:hover {
+  background-color: var(--accent-color);
+  transform: scale(1.1);
+}
+
+.skill-konten {
+  margin-top: 30px;
+  text-align: center;
+}
+/* End Skill */
+
+/* Sertifikat */
+.sertifikat {
+  padding-top: 30px;
+  padding-bottom: 80px;
+  background-color: var(--secondary-color);
+}
+
+.sertifikat-box .accordion-button::after {
+  background-color: #ffffff;
+  border-radius: 100%;
+}
+
+.accordion-button {
+  background-color: var(--list-color) !important;
+  color: #ffffff !important;
+  font-size: 1rem;
+  font-weight: 700;
+}
+.accordion-item {
+  background-color: var(--accent-color);
+}
+/* End Sertifikat */
+
+/* Project */
+#project {
+  padding-top: 100px;
+  padding-bottom: 80px;
+  background-color: var(--primary-color);
+}
+.container-p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+.container-p h1 {
+  font-size: 3rem;
+  color: #ffffff;
+}
+.wrapper-p .card-p {
+  height: auto;
+  flex-direction: column;
+  display: flex;
+  border-radius: 20px;
+  background: #ffffff;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+  margin-top: 30px;
+  border: 5px solid transparent;
+}
+.wrapper-p .card-p:hover {
+  transform: translateY(-10px);
+  border-color: var(--accent-color);
+}
+.wrapper-p {
+  max-width: 1100px;
+  padding: 20px 10px;
+  margin: 0 60px 35px;
+  overflow: hidden;
+}
+.card-p .card-img-p {
+  position: relative;
+}
+.card-p .card-img-p .card-tag {
+  position: absolute;
+  left: 25px;
+  top: 25px;
+  color: var(--accent-color);
+  border-radius: 30px;
+  font-weight: 600;
+  font-size: 0.75rem;
+  padding: 5px 15px;
+  background: var(--background-color);
+}
+
+.card-p .card-img-p img {
+  width: 100%;
+  object-fit: cover;
+  padding: 10px;
+  border-radius: 20px;
+}
+.card-p .card-cont {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 25px 25px;
+}
+.card-p .card-cont .card-title {
+  color: var(--accent-color);
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.3;
+  margin-bottom: 15px;
+}
+.card-p .card-cont .card-text {
+  color: #000;
+  font-size: 0.95rem;
+  line-height: 0.5;
+}
+.card-p .card-button {
+  color: var(--background-color);
+  border-radius: 30px;
+  font-weight: 700;
+  font-size: 1rem;
+  padding-top: 10px;
+  margin: auto;
+  margin-bottom: 10px;
+  text-decoration: none;
+  background: var(--accent-color);
+  height: 50px;
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 8px 15px rgba(99, 102, 241, 0.2);
+  transition: all 0.3s ease;
+}
+.card-p .card-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 15px rgba(99, 102, 241, 0.3);
+}
+.wrapper-p .swiper-pagination-bullet {
+  height: 13px;
+  width: 13px;
+  opacity: 50%;
+  background: var(--accent-color);
+}
+.wrapper-p .swiper-pagination-bullet-active {
+  opacity: 1;
+}
+.wrapper-p .swiper-button-prev {
+  color: var(--accent-color);
+  margin-top: -35px;
+  transition: all 0.3s ease;
+}
+.wrapper-p .swiper-button-next {
+  color: var(--accent-color);
+  margin-top: -35px;
+  transition: all 0.3s ease;
+}
+
+/* End Project */
+
+/* HSE Activities */
+.container-a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 100px;
+  background: var(--secondary-color);
+  padding: auto;
+}
+.card-list-a .card-item-a .card-link-a {
+  user-select: none;
+  display: block;
+  background: #ffffff;
+  padding: 18px;
+  border-radius: 20px;
+  border: 5px solid transparent;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.05);
+  transition: 0.2s ease;
+  margin: auto;
+  margin-top: 50px;
+}
+.card-wrapper-a {
+  max-width: 1100px;
+  margin: 0 60px 35px;
+  padding: 20px 10px;
+  overflow: hidden;
+}
+.card-wrapper-a .card-link-a:hover {
+  transform: translateY(-10px);
+  border-color: var(--accent-color);
+}
+.card-list-a .card-item-a .card-link-a:hover {
+  border-color: var(--list-color);
+}
+
+.card-list-a .card-item-a {
+  list-style: none;
+}
+
+.card-list-a .card-link-a .card-img-a {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.card-link-a .card-img-a {
+  position: relative;
+}
+.card-list-a .card-link-a .badge {
+  color: #ffffff;
+  padding: 8px 16px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 16px 0 18px;
+  background: var(--list-color);
+  width: fit-content;
+  border-radius: 50px;
+}
+.card-list-a .card-link-a .card-cont {
+  font-size: 1rem;
+  color: black;
+  font-weight: 300;
+  text-align: justify;
+}
+.card-list-a .card-link-a .matsymbol {
+  height: 35px;
+  width: 35px;
+  color: var(--list-color);
+  border-radius: 50%;
+  margin: 30px 0 5px;
+  background: none;
+  border: 2px solid var(--list-color);
+  transform: rotate(-45deg);
+}
+.card-list-a .card-link-a:hover .matsymbol {
+  color: #ffffff;
+  background: var(--list-color);
+  border: 2px solid var(--list-color);
+}
+.card-wrapper-a .swiper-pagination-bullet {
+  height: 13px;
+  width: 13px;
+  opacity: 50%;
+  background: var(--list-color);
+}
+.card-wrapper-a .swiper-pagination-bullet-active {
+  opacity: 1;
+}
+.card-wrapper-a .swiper-button-prev {
+  color: var(--list-color);
+}
+.card-wrapper-a .swiper-button-next {
+  color: var(--list-color);
+}
+
+/* End HSE Activities */
+
+/* HSE Activities */
+#hseact {
+  padding-top: 30px;
+  padding-bottom: 80px;
+  background-color: var(--secondary-color);
+}
+
+.card-wrapper {
+  margin: 60px 0px 35px;
+}
+.card-list .card-item {
+  list-style: none;
+}
+.card-list .card-item .card-link {
+  width: 350px;
+  user-select: none;
+  display: block;
+  background-color: #ffffff;
+  padding: 18px;
+  border-radius: 12px;
+  text-decoration: none;
+  border: 5px solid transparent;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.05);
+  transition: 0.2s ease;
+}
+.card-list .card-item .card-link:hover {
+  border-color: var(--list-color);
+}
+.card-list .card-link .card-image {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.card-list .card-link .badge {
+  color: #ffffff;
+  padding: 8px 16px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 16px 0 18px;
+  background: var(--list-color);
+  width: fit-content;
+  border-radius: 50px;
+}
+.card-list .card-link .badge:hover {
+  background: var(--list-color);
+}
+
+.card-list .card-link h2 {
+  font-size: 1rem;
+  color: black;
+  font-weight: 300;
+  text-align: justify;
+}
+.card-list .card-link .matsymbol {
+  height: 35px;
+  width: 35px;
+  color: var(--list-color);
+  border-radius: 50%;
+  margin: 30px 0 5px;
+  background: none;
+  border: 2px solid var(--list-color);
+  transform: rotate(-45deg);
+}
+.card-list .card-link:hover .matsymbol {
+  color: #ffffff;
+  background: var(--list-color);
+  border: 2px solid var(--list-color);
+}
+.card-wrapper .swiper-pagination-bullet {
+  height: 13px;
+  width: 13px;
+  opacity: 50%;
+  background: var(--list-color);
+}
+.card-wrapper .swiper-pagination-bullet-active {
+  opacity: 1;
+}
+.card-wrapper .swiper-button-prev {
+  color: var(--list-color);
+}
+.card-wrapper .swiper-button-next {
+  color: var(--list-color);
+}
+
+/* End HSE Activities */
+
+/* HSE Documents */
+#hsedoc {
+  padding-top: 30px;
+  padding-bottom: 80px;
+  background-color: var(--primary-color);
+}
+
+/* End HSE Documents */
+
+/* Project Galery */
+#projects1 {
+  padding-top: 30px;
+  padding-bottom: 80px;
+  background-color: var(--primary-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#projects1 .container {
+  padding: 30px 10px;
+}
+
+#projects1 h1 {
+  color: var(--accent-color);
+  font-size: 3rem;
+  font-weight: 700;
+  padding-left: 60px;
+}
+#projects1 h4 {
+  text-align: left;
+  font-size: 1rem;
+  font-weight: 500;
+  padding-left: 60px;
+}
+
+.news {
+  margin-top: 100px;
+  padding: 50px;
+}
+
+.news {
+  width: 100%;
+}
+
+.news1 .img {
+  width: 170px;
+  height: 120px;
+  align-items: center;
+  background-color: #ffffff;
+  margin: 30px;
+}
+.news1 .img img {
+  width: 100%;
+  height: 100%;
+}
+
+.news1 {
+  display: grid;
+  grid-template-columns: 0.8fr 4fr;
+  align-items: center;
+}
+.news hr {
+  width: 100%;
+  height: 5px;
+  opacity: 100%;
+}
+.galery hr {
+  width: 100%;
+  height: 5px;
+  opacity: 100%;
+}
+.wrapperg .cardg {
+  width: 500px;
+  height: auto;
+  flex-direction: column;
+  display: flex;
+  border-radius: 20px;
+  background: #ffffff;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+  border: 5px solid transparent;
+}
+.wrapperg .cardg:hover {
+  transform: translateY(-10px);
+  border-color: var(--accent-color);
+}
+.wrapperg {
+  max-width: 1100px;
+  padding: 20px 10px;
+  margin: 0 60px 35px;
+  overflow: hidden;
+}
+.cardg .card-imageg img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+  padding: 10px;
+}
+.wrapperg .swiper-pagination-bullet {
+  height: 13px;
+  width: 13px;
+  opacity: 1;
+  background: var(--secondary-color);
+  overflow: hidden;
+}
+.wrapperg .swiper-pagination-bullet-active {
+  opacity: 1;
+}
+.wrapperg .swiper-pagination-bullet-active::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background: var(--accent-color);
+  transform: scaleX(0);
+  transform-origin: left center;
+  animation: autoplay-loading 3s linear forwards;
+}
+
+@keyframes autoplay-loading {
+  100% {
+    transform: scaleX(1);
+  }
+}
+.containerg:hover .wrapperg .swiper-pagination-bullet-active::before {
+  animation-play-state: paused;
+}
+
+.wrapperg .swiper-button-prev {
+  color: var(--accent-color);
+  margin-top: -35px;
+  transition: all 0.3s ease;
+}
+.wrapperg .swiper-button-next {
+  color: var(--accent-color);
+  margin-top: -35px;
+  transition: all 0.3s ease;
+}
+
+.btn-project1 {
+  width: 200px;
+  height: 50px;
+  background-color: var(--list-color);
+  color: #ffffff;
+  margin: 10px;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+}
+.btn-project1:hover {
+  background-color: var(--accent-color);
+}
+/* End Project Galery */
+
+/* Footer */
+#footer {
+  background-color: var(--secondary-color);
+  margin-top: 100px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  align-content: center;
+}
+.footer-box .row .col:nth-child(2) a {
+  opacity: 75%;
+}
+.footer-box .row .col:nth-child(2) a:hover {
+  opacity: 100%;
+}
+
+.copyright {
+  margin-top: 20px;
+}
+/* End Footer */

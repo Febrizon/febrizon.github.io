@@ -1,0 +1,135 @@
+@media screen and (max-width: 1200px) {
+  #Hero p {
+    font-size: 0.9rem;
+  }
+  #Hero h1 {
+    font-size: 2.3rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #Hero img {
+    width: 50%;
+  }
+  .cv {
+    font-size: 1rem;
+  }
+  .social-icon {
+    left: 50%;
+    transform: translate(-50%);
+  }
+
+  #Hero .row {
+    padding-bottom: 100px;
+  }
+  .btn-custom1 {
+    width: 80%;
+  }
+
+  #About p {
+    text-align: justify !important;
+  }
+
+  #Skill .card {
+    background-color: #414558;
+    height: 70px;
+    color: #ffffff;
+    text-align: start;
+  }
+  #Skill img {
+    width: 70%;
+    margin: 10px;
+  }
+
+  #Skill svg {
+    width: 60%;
+  }
+  #Skill h4 {
+    font-size: 1rem;
+    margin-top: 10px;
+  }
+  .news1 .img {
+    width: 120px;
+    height: 70px;
+  }
+  .news1 .title {
+    font-size: 0.7rem;
+  }
+
+  #projects1 h1 {
+    font-size: 2rem;
+  }
+
+  .btn-project1 {
+    min-width: 40px;
+    min-height: 20px;
+    font-size: 1rem;
+  }
+  .card-wrapper .swiper-slide-button {
+    display: none;
+  }
+  .wrapper-p .swiper-button-prev {
+    display: none;
+  }
+  .wrapper-p .swiper-button-next {
+    display: none;
+  }
+  .container-p {
+    min-height: auto;
+  }
+  
+.wrapperg{
+  margin: 0 10px 25px;
+
+}
+.wrapperg .swiper-button-prev{
+  display: none;
+}
+.wrapperg .swiper-button-next{
+  display: none;
+}
+
+  .card-wrapper-a .swiper-button-prev {
+    display: none;
+  }
+  .card-wrapper-a .swiper-button-next {
+    display: none;
+  }
+  .card-list-a .card-link-a .badge {
+    font-size: 1.2rem;
+  }
+  .card-list-a .card-link-a .card-cont {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  hr {
+    width: 75%;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  #project h3 {
+    font-size: 1rem !important;
+  }
+  #project h4 {
+    font-size: 0.7rem !important;
+  }
+
+  .carousel-inner {
+    display: flex;
+    padding: 1em;
+  }
+  .carousel-item {
+    display: block;
+    margin-right: 0;
+    flex: 0 0 calc(100% / 2);
+  }
+  .card1 {
+    margin: 0 0.5em;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+}
